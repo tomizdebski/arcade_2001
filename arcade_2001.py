@@ -62,7 +62,9 @@ def throw_a_dice(input_dice):
                 modifier = int(modifier)
             else:
                 modifier = 0
-    score = sum([random.randint(1, dice_value) for i in range(multiply)]) + modifier
+        for i in range(multiply):
+        score = (multiply * random.randint(1, dice_value))
+        score = score + modifier
     return score
 
 
